@@ -1,0 +1,84 @@
+.activehome {
+  margin-right: 25%;
+}
+.homeContainer {
+  margin-top: 100px;
+  display: flex;
+  flex-grow: 1;
+  transition: all ease-in 500ms;
+
+}
+.containerReports {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.containerreport {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #bafb79;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  gap: 10px;
+  border-radius: 0.8rem;
+}
+.item-1 {
+  background-color: #499101;
+}
+.item-2 {
+  background-color: #375815;
+}
+.item-3 {
+  background-color: #64893f;
+}
+.svgright {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconreport {
+  font-size: 2.5rem;
+}
+.inforeport {
+  font-family: B-yekan;
+}
+.containerinformation-active {
+  height: 100%;
+  margin-right: 25%;
+}
+.chart , .infouser {
+  font-family: B-yekan;
+  width: 70%;
+  margin: 30px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 20px -2px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 20px -2px rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px -2px rgb(0, 0, 0);
+  transition: all ease-in 300ms;
+  border-radius: 4px;
+  max-height: 50vh
+}
+.infouser{
+  width: 30%;
+}
+.chart:hover , .infouser:hover{
+  -webkit-box-shadow: 0px 0px 20px -2px rgba(111, 224, 69, 1);
+  -moz-box-shadow: 0px 0px 20px -2px rgba(111, 224, 69, 1);
+  box-shadow: 0px 0px 20px -2px rgba(111, 224, 69, 1);
+}
+
+.containerinformation{
+  height: 100%;
+  display: flex;
+  transition: all ease-in 500ms;
+
+}

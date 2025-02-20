@@ -1,0 +1,24 @@
+.containerUser{
+    color: #fff;
+    font-family: B-yekan;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    }
+.imgUser{
+    max-width: 150px;
+    border-radius: 50%;
+    border: 10px inset  var(--secondary-color);
+    margin-bottom: 20px;
+}
+.edituser{
+    margin-top: 20px;
+    width: 150px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}

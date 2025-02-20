@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--primary-color);
+}
+:root {
+    --primary-color: #29353d;
+    --secondary-color: #bafb79;
+    --therd-color: #242b2f;
+}
+@font-face {
+    font-family: B-yekan;
+    src: url(../public//B_Yekan/B_Yekan/Yekan.ttf);
+}
+.navbarRight.navbarRight-active .activehome{
+background-color: aqua;
+}

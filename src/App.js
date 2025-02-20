@@ -1,0 +1,19 @@
+import React from "react";
+import { useRoutes } from "react-router-dom";
+import "./App.css";
+import routes from "./routes";
+import Sidebar from "./components/sidebar/sidebar";
+import { SidebarProvider } from "./infoSidebar";
+export default function App() {
+  let Routes = useRoutes(routes);
+  return (
+    <>
+      <SidebarProvider>
+        <div className="container">
+          {Routes}
+          <Sidebar />
+        </div>
+      </SidebarProvider>
+    </>
+  );
+}
