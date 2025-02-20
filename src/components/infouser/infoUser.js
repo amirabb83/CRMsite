@@ -11,7 +11,7 @@ export default function infoUser() {
         <h3>سمت شغلی فرد</h3>
       </div>
       <div class="edituser">
-        <h3>ویرایش اطلاعات</h3>
+        {/* <h3>ویرایش اطلاعات</h3> */}
       </div>
     </div>
   );
