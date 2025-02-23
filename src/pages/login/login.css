@@ -1,0 +1,113 @@
+.container {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  gap: 2rem;
+
+  font-family: B-yekan;
+}
+.containerWraper {
+  max-width: 635px !important;
+  border-radius: 2px;
+  background-color: #26a69a;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  -webkit-box-shadow: -12px 10px 27px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -12px 10px 27px 0px rgba(0,0,0,0.75);
+  box-shadow: -12px 10px 27px 0px rgba(0,0,0,0.75);
+}
+.login-input {
+  border: none;
+  background-color: #26a69a;
+  color: #fff;
+}
+.img-title{
+    width: 200px;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #fff;
+  font-family: B-yekan;
+}
+.container-input {
+  display: flex;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+.icon-login {
+  width: 25px;
+  height: 25px;
+  margin-left: 18px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.loginbtn {
+  background-color: #26a69a;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all ease-in 300ms;
+  margin-bottom: 12px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+.loginbtn:hover {
+  background-color: #fff;
+  color: #26a69a;
+}
+.fechers-login {
+  cursor: pointer;
+}
+.rememberMe {
+  display: flex;
+}
+.chekbtn {
+  margin-left: 5px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #26a69a;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.chekbtn:checked {
+  background-color: white;
+  border-color: white;
+}
+.fechers-login {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+}
+.newuser {
+  width: 150px;
+  justify-content: center;
+  display: flex;
+  color: #26a69a;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all ease-in 300ms;
+}
+.newuser:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #26a69a;
+}

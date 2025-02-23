@@ -4,14 +4,16 @@ import "./App.css";
 import routes from "./routes";
 import Sidebar from "./components/sidebar/sidebar";
 import { SidebarProvider } from "./infoSidebar";
+import Login from './pages/login/login'
 export default function App() {
   let Routes = useRoutes(routes);
   return (
     <>
       <SidebarProvider>
         <div className="container">
-          {Routes}
-          <Sidebar />
+          <Login/>
+          {/* {Routes} */}
+          {/* <Sidebar /> */}
         </div>
       </SidebarProvider>
     </>
