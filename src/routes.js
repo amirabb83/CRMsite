@@ -1,7 +1,6 @@
-import Home from './pages/home/home'
+import Home from "./pages/home/home";
 
-
-let routes = [
-    { path:'/' , element:<Home/>}
-]
+const routes = [
+  {path: "/",element: <Home/>,},
+];
 export default routes

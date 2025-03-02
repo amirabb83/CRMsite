@@ -1,21 +1,20 @@
-import React from "react";
-import { useRoutes } from "react-router-dom";
+import React  from "react";
 import "./App.css";
-import routes from "./routes";
 import Sidebar from "./components/sidebar/sidebar";
 import { SidebarProvider } from "./infoSidebar";
-import Login from './pages/login/login'
+import { AuthProvider } from "./AuthContext";
+import { AppRoutes } from "./AppRutes";
+
+
 export default function App() {
-  let Routes = useRoutes(routes);
   return (
-    <>
+    <AuthProvider>
       <SidebarProvider>
         <div className="container">
-          <Login/>
-          {/* {Routes} */}
-          {/* <Sidebar /> */}
+          <AppRoutes/>
+          <Sidebar />
         </div>
       </SidebarProvider>
-    </>
+    </AuthProvider>
   );
 }
