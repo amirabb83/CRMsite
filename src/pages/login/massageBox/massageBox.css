@@ -1,0 +1,71 @@
+.container-massgebox {
+    display: flex;
+    align-items: center;
+    font-family: B-yekan;
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    overflow: hidden; 
+    position: fixed; 
+  }
+  
+  .icon-massgebox {
+    margin: 4px;
+  }
+  
+  .icon-massge {
+    width: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .error-massge {
+    background-color: #FF9800;
+  }
+  
+  .success-massge {
+    background-color: #689F38;
+  }
+  
+  .title-massge {
+    margin-right: 10px; 
+  }
+  
+  .title-massge h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .title-massge p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px; 
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff; /* رنگ خط */
+    animation: progress 3s linear forwards; /* انیمیشن ۳ ثانیه‌ای */
+  }
+  
+  @keyframes progress {
+    0% {
+      transform: scaleX(0); /* شروع از عرض صفر */
+    }
+    100% {
+      transform: scaleX(1); /* پایان با عرض کامل */
+    }
+  }

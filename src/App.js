@@ -3,8 +3,7 @@ import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
 import { SidebarProvider } from "./infoSidebar";
 import { AuthProvider } from "./AuthContext";
-import { AppRoutes } from "./AppRutes";
-
+import { AppRoutes } from "../src/AppRutes";
 
 export default function App() {
   return (

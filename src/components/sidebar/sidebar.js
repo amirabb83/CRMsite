@@ -1,6 +1,6 @@
 import "./sidebar.css";
 import { SlUser } from "react-icons/sl";
-import { LuSquareDashed } from "react-icons/lu";
+import { HiArrowsPointingOut } from "react-icons/hi2";
 import { SlArrowLeft } from "react-icons/sl";
 import { CiShare2 } from "react-icons/ci";
 import { GoTasklist } from "react-icons/go";
@@ -30,7 +30,7 @@ export default function Sidebar() {
           </div>
           <div className="navbarLeft">
             <span>
-              <LuSquareDashed className="imgnavbar" />
+              <HiArrowsPointingOut className="imgnavbar" />
             </span>
           </div>
         </div>
