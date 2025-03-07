@@ -1,4 +1,5 @@
 import "./sidebar.css";
+import { useState } from "react";
 import { SlUser } from "react-icons/sl";
 import { HiArrowsPointingOut } from "react-icons/hi2";
 import { SlArrowLeft } from "react-icons/sl";
@@ -9,8 +10,41 @@ import { PiUsersThreeBold } from "react-icons/pi";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useSidebar } from "../../infoSidebar";
+import { HiArrowsPointingIn } from "react-icons/hi2";
+
+
 export default function Sidebar() {
+
+  const [isfullscreen , setisfullscreen] = useState(false);
   const {isSidebarOpen, toggleSidebar}  = useSidebar()
+
+  const fullscreenHandler = ()=> {
+    if (!isfullscreen) {
+      // وارد حالت فول‌اسکرین شوید
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+        document.documentElement.msRequestFullscreen();
+      }
+    } else {
+      // از حالت فول‌اسکرین خارج شوید
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) { // Firefox
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { // IE/Edge
+        document.msExitFullscreen();
+      }
+    }
+    setisfullscreen(pre => !pre)
+  }
+
   return (
     <>
       <div class="navbar">
@@ -29,8 +63,12 @@ export default function Sidebar() {
             
           </div>
           <div className="navbarLeft">
-            <span>
-              <HiArrowsPointingOut className="imgnavbar" />
+            <span onClick={ () => fullscreenHandler()}>
+              {isfullscreen ? (
+                <HiArrowsPointingIn className="imgnavbar"/>
+              ) : (
+                <HiArrowsPointingOut className="imgnavbar"/>
+              )}
             </span>
           </div>
         </div>

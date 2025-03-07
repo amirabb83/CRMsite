@@ -19,8 +19,8 @@
   cursor: pointer;
 }
 .imgnavbar {
-  height: 100%;
-  width: 100%;
+  height: 60px;
+  width: 60px;
   color: var(--secondary-color);
 }
 .navbarRight {
@@ -92,9 +92,6 @@
   gap: 10px;
   font-size: 1.7rem;
   color: var(--secondary-color);
-}
-.sidebaricons {
-  /* margin-left: -50px; */
 }
 .containerlis:hover .secli {
   opacity: 1;
