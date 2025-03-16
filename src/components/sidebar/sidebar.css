@@ -2,25 +2,24 @@
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   background-color: var(--primary-color);
   box-shadow: -1px 2px 20px 0px black;
 
 }
 .navbarWraper {
-  padding-top: 10px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navbarLeft {
   padding-left: 20px;
-  height: 60px;
   cursor: pointer;
 }
 .imgnavbar {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   color: var(--secondary-color);
 }
 .navbarRight {
@@ -32,8 +31,8 @@
   padding-right: calc(20px + 25%);
 }
 .hamicon {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   transition: all ease-in 300ms;
 }
@@ -93,14 +92,16 @@
   font-size: 1.7rem;
   color: var(--secondary-color);
 }
-.containerlis:hover .secli {
+.secli-active {
+  cursor: pointer;
+  font-size: 1.4rem;
+  align-items: center;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
   opacity: 1;
   visibility: visible;
   height: auto;
   transition: all 0.3s ease;
-}
-.secli li {
-  padding: 0.6rem;
 }
 .secli {
   font-size: 1.4rem;
@@ -110,6 +111,7 @@
   opacity: 0;
   height: 0;
   visibility: hidden;
+
 }
 .secli li:hover {
   transition: all ease-in-out 300ms;
@@ -123,7 +125,9 @@
 .containerlis:hover .mainli {
   color: var(--secondary-color);
 }
-.containerlis:hover .openIcon {
+.openIcon-active {
   transform: rotate(-90deg);
   transform-origin: center;
+  transition: all ease-in-out 300ms;
+
 }

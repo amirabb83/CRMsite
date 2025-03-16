@@ -77,8 +77,6 @@
 }
 
 .containerinformation{
-  height: 100%;
   display: flex;
   transition: all ease-in 500ms;
-
 }
