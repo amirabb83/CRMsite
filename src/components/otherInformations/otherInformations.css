@@ -1,0 +1,23 @@
+.informationwraper{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.oi1{
+min-height: 400px;
+}
+.oi2{
+    min-height: 350px;
+}
+.oi{
+background-color: rgb(175, 236, 114);
+border-radius: 50px;
+}
+.rectangle{
+    width: 65%;
+}
+.square{
+    width: 25%;
+}
+

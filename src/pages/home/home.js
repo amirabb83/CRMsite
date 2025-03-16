@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { useSidebar } from "../../infoSidebar";
-
+import OtherInformations from "../../components/otherInformations/otherInformations";
 import { informationreport } from "./../../datas";
 import Chart from "../../components/recharts/recharts";
 import Infouser from "../../components/infouser/infoUser";
@@ -42,6 +42,14 @@ export default function Home() {
         <div className="chart">
           <Chart />
         </div>
+      </div>
+
+      <div className={
+        isSidebarOpen
+        ? 'otherInformationsContainer-Active '  
+        : 'otherInformationsContainer'
+      }>
+        <OtherInformations />
       </div>
     </>
   );
