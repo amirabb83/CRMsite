@@ -14,12 +14,15 @@ import { AuthContext } from "../../AuthContext";
 import { HiArrowsPointingIn } from "react-icons/hi2";
 import useFullscreen from "../../hooks/usefullscreen";
 import { useState } from "react";
+import { Link , useLocation } from "react-router-dom";
+
+
 export default function Sidebar() {
   const { isAuthenticated } = useContext(AuthContext);
   const { isSidebarOpen, toggleSidebar } = useSidebar();
   const { isfullscreen, fullscreenHandler } = useFullscreen();
-  const [isliactive, setisliactive] = useState(false);
   const [activeLists, setActiveLists] = useState([]);
+  const location = useLocation()
 
   const showlihandler = (index) => {
     setActiveLists((prev) =>
@@ -86,7 +89,7 @@ export default function Sidebar() {
                       <div className="mainli" onClick={() => showlihandler(0)}>
                         <li className="sidebarlistitem">
                           <SlUser className="sidebaricons" />
-                          مدیریت بازاریابان
+                          مدیریت کارکنان
                           <SlArrowLeft
                             className={
                               activeLists.includes(0)
@@ -101,8 +104,11 @@ export default function Sidebar() {
                           activeLists.includes(0) ? "secli-active" : "secli"
                         }
                       >
-                        <li>افزودن بازاریاب</li>
-                        <li>مدیریت بازاریابان</li>
+                      {console.log(location.pathname)}
+                        <li className={location.pathname === '/addmarketer'  ?  'activeli' : ''}>
+                          <Link to={'/addmarketer'}> افزودن کارکنان</Link>
+                        </li>
+                        <li>مدیریت کارکنان</li>
                       </div>
                     </div>
 

@@ -1,9 +1,9 @@
 import { Navigate, useRoutes } from "react-router-dom";
 import React, { useContext } from "react";
 import { AuthContext } from "./AuthContext";
-import Home from './pages/home/home';
-import Login from './pages/login/login';
-
+import Home from "./pages/home/home";
+import Login from "./pages/login/login";
+import Addmarketer from "./pages/marketer/addmarketer";
 export const AppRoutes = () => {
   const { isAuthenticated } = useContext(AuthContext);
 
@@ -14,6 +14,7 @@ export const AppRoutes = () => {
     },
     { path: "/login", element: <Login /> },
     { path: "*", element: <Navigate to={isAuthenticated ? "/" : "/login"} /> },
+    { path: "/addmarketer" , element: isAuthenticated ? <Addmarketer/> : <Navigate to="/login" /> }, 
   ]);
 
   return routes;

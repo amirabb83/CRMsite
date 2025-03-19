@@ -13,6 +13,13 @@
   justify-content: space-evenly;
   gap: 1rem;
 }
+a{
+  color:inherit;
+  text-decoration: none;
+}
+.activeli{
+  color: var(--secondary-color);
+}
 .containerreport {
   flex: 1;
   align-items: center;
@@ -80,9 +87,13 @@
   display: flex;
 }
 .otherInformationsContainer{
+  margin-top: 3rem;
+
   width: 100%;
 
 }
 .otherInformationsContainer-Active {
+  margin-top: 3rem;
   margin-right: 25%;
 }
+

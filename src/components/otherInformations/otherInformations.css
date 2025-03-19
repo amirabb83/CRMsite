@@ -1,8 +1,11 @@
 .informationwraper{
+    color: var(--primary-color);
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 4rem;
+    font-family: B-yekan;
 }
 .oi1{
 min-height: 400px;
@@ -18,6 +21,43 @@ border-radius: 50px;
     width: 65%;
 }
 .square{
+    padding: 2rem;
     width: 25%;
 }
+.titleRecrtangle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.infoTitle h3{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.btnTitle button{
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    font-family: B-yekan;
+    color: var(--secondary-color);
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.square h3{
+    font-size: 1.5rem;
+}
 
+.square ul li{
+    font-size: 1.5rem;
+}
+.logincustumer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    
+}
+.titlelogincustumer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
