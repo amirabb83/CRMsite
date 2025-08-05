@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Screenshot(337).png" alt="کاور ریپازیتوری" />
+  <img src="./Screenshot (337).png" alt="کاور ریپازیتوری" />
 </p>
 # Getting Started with Create React App
 
