@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./Screenshot (337).png" alt="کاور ریپازیتوری" />
+  نام کاربری : amir
+  رمز : 123
+  <img src="./Screenshot (339).png" alt="کاور ریپازیتوری" />
 </p>
 # Getting Started with Create React App
 
